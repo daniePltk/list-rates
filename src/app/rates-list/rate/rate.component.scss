@@ -1,0 +1,44 @@
+:host {
+  .rate-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: nowrap; // all flex items will be on one line
+    background: var(--background-color-primary);
+    box-shadow: var(--box-shadow-primary);
+    padding: 15px 15px 15px 0;
+    gap: 20px;
+    @media (max-width: 767px) {
+      gap: 0;
+    }
+    .tarif-info {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-grow: 1;
+
+      .tarif-order {
+        width: 20px;
+        display: flex;
+        align-self: stretch; // allows the element to take full height
+        align-items: flex-start;
+        justify-content: center;
+        border: none;
+        margin: -12px 10px -12px 0;
+        @media (min-width: 992px) {
+          align-items: center;
+          margin: -15px 10px -15px 0;
+          border-right: var(--border-primary);
+        }
+      }
+    }
+
+    .tarif-details {
+      flex-grow: 2;
+    }
+
+    .tarif-price-cta-button {
+      flex-grow: 1;
+    }
+  }
+}

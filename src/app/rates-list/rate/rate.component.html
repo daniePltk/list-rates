@@ -1,0 +1,12 @@
+<div class="rate-container">
+    <div class="tarif-info">
+        <div class="tarif-order">{{index+1}}</div>
+        <rate-name [rateData]="rateData" [index]="index"></rate-name>
+    </div>
+    <div class="tarif-details">
+        <rate-details [rateData]="rateData"></rate-details>
+    </div>    
+    <div class="tarif-price-cta-button">  
+        <rate-price [rateData]="rateData"></rate-price>
+    </div>
+</div>

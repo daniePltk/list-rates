@@ -1,0 +1,21 @@
+:host {
+  .rates-list-main-container {
+    padding: 20px;
+    border: var(--border-primary);
+
+    @media (max-width: 413px) {
+      padding: 5px;
+    }
+  }
+
+  ul {
+    li {
+      list-style: none;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

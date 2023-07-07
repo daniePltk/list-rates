@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --font-color-secondary: #808080;
+  --font-color-primary: rgba(0, 0, 0, 1);
+  --font-type-primary: "Roboto";
+  --background-color-primary: rgba(248, 248, 248, 1);
+  --box-shadow-primary: 0px 0px 0px 1px rgba(217, 217, 217, 1);
+  --border-primary: 1px solid rgba(217, 217, 217, 1);
+}
+
+body {
+  font-family: var(--font-type-primary);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 9px 10px 9px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  cursor: pointer;
+  @media (max-width: 767px) {
+    padding: 9px 5px 9px;
+  }
+}

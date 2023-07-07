@@ -1,0 +1,9 @@
+<select [(ngModel)]="selectedCategory" (ngModelChange)="filterResults()">
+    <option value="">All</option>
+    <option value="download">Download Speed</option>
+    <option value="upload">Upload Speed</option>
+    <option value="price">Price</option>
+</select>
+<ul class="rates-list-main-container">
+    <li *ngFor="let item of mockedData; let i = index"><rate [rateData]="item" [index]="i"></rate></li>
+</ul>

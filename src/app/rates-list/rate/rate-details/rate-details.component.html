@@ -1,0 +1,9 @@
+<div class="tarif-speed">
+    <div class="dowload-speed">{{rateData.download}}<span class="speed-unit-format">&nbsp;Mbit/s</span></div>
+    <div class="upload-speed">{{rateData.upload}}<span class="speed-unit-format">&nbsp;Mbit/s</span></div>
+</div>
+<div class="tarif-benefits">
+    <ul>
+        <li *ngFor="let benefit of rateData.benefits">{{benefit}}</li>
+    </ul>
+</div>

@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  @media (max-width: 767px) {
+    flex-direction: row;
+  }
+
+  .rate-price {
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+
+    @media (max-width: 767px) {
+      margin-right: 10px;
+    }
+  }
+  .rate-cta {
+    text-align: right;
+    @media (max-width: 767px) {
+      align-self: stretch;
+    }
+    button {
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      background-color: #fd8a02;
+      border-color: #fd8a02;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      @media (max-width: 413px) {
+        padding: 9px 2px 9px;
+      }
+      .btn-txt {
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .tarif-speed,
+  .tarif-benefits {
+    min-width: 100px;
+    margin-right: auto;
+    @media (max-width: 991px) {
+      margin-right: 0;
+    }
+  }
+  .tarif-speed {
+    .dowload-speed {
+      @media (max-width: 767px) {
+        display: flex;
+        min-width: 50px;
+        flex-flow: column;
+      }
+    }
+    .upload-speed {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+  .tarif-benefits {
+    font-size: 12px;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+}
